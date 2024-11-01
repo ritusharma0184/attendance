@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="chrome=1" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+
+  <title>
+    ChatApp - Chat & Group Chat App UI in React Native CLI v1.0
+  </title>
+
+  <!-- CSS style -->
+  <link rel="stylesheet" type="text/css" href="assets/css/global.css" />
+  <link rel="stylesheet" type="text/css" href="assets/css/fontello.css" media="all" />
+  <link rel="stylesheet" type="text/css" href="assets/js/google-code-prettify/prettify.css" />
+
+  <!-- Google web fonts -->
+  <link
+    href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800"
+    rel="stylesheet" type="text/css" />
+
+  <!-- jQuery -->
+  <script type="text/javascript" src="assets/js/jquery.js"></script>
+  <script type="text/javascript" src="assets/js/globals.js"></script>
+  <script type="text/javascript" src="assets/js/google-code-prettify/prettify.js"></script>
+
+  <style type="text/css">
+    img {
+      max-width: 800px;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Header -->
+  <header>
+    <div class="container">
+      <div class="logo">
+        ChatApp - Chat & Group Chat App UI in React Native CLI v1.0
+      </div>
+      <div class="slogan">Fabulous UI in React Native CLI</div>
+    </div>
+  </header>
+
+  <!-- Container -->
+  <div class="container">
+    <div class="author">
+      Created: <strong>02/05/2024</strong><br />
+      Last Update: <strong>02/05/2024</strong><br />
+      By:
+      <strong><a href="https://codecanyon.net/user/pixelnestlabs/portfolio"
+          target="_blank">PixelNestLabs</a></strong><br />
+      Profile:
+      <strong><a href="https://codecanyon.net/user/pixelnestlabs"
+          target="_blank">www.codecanyon.net.com/user/pixelnestlabs</a></strong><br />
+      E-mail:
+      <strong><a href="mailto:pixelnestlabs@gmail.com">pixelnestlabs@gmail.com</a></strong><br />
+    </div>
+    <p>&nbsp;</p>
+
+    <h2 class="alt">Table of Contents</h2>
+    <ol class="alpha">
+      <li><a href="#basic">Basic Information</a></li>
+      <li><a href="#file">Directories & File Uses</a></li>
+      <li><a href="#map">About Google Map Configuration</a></li>
+      <li><a href="#question">Still have a question?</a></li>
+      <li><a href="#contact">Contact US</a></li>
+    </ol>
+
+    <hr />
+    <h3 id="basic">A) Basic Information</h3>
+
+    <ul>
+      <li>
+        <b>Environment Setup</b> - Please visit this link and setup React Native CLI
+        <a href="https://reactnative.dev/docs/environment-setup"
+          target="_blank">https://reactnative.dev/docs/environment-setup</a>
+      </li>
+      <li>
+        <b>Run our app with React Native CLI</b> - Open <b>attendanceApp</b> folder on your
+        selected IDE (VSCode is Recommended). Then follow below step.
+      </li>
+      <ul>
+        <li>Run <b>npm install</b> command in terminal.</li>
+        <p><b>Note: </b>If you get error in <b>npm install</b> then please try <b>npm install --legacy-peer-deps</b> or
+          <b>yarn install</b>.
+        </p>
+        <li><b>1) For Android</b></li>
+        <ol type="i">
+          <li>For run android app you need to set your android sdk path at
+            <b>attendanceApp/android/local.properties</b>
+            at line number <b>11</b>.
+          </li>
+          <img src="img/sdk-path.png" width="550px" />
+          <li>Run <b>npm start</b> command in one terminal & Run <b>npm run android</b> command in second terminal.</li>
+        </ol>
+        <li><b>2) For iOS</b></li>
+        <ol type="i">
+          <li>For run iOS app you need to install pods before run iOS project. For that open terminal and follow below
+            steps.</li>
+          <ul>
+            <li>Go to ios folder in terminal using <b>cd ios</b> command.</li>
+            <li>Run <b>pod install</b> command.</li>
+            <li>Now come back to root of our project using <b>cd ..</b> command.</li>
+          </ul>
+          <li>Run <b>npm start</b> command in one terminal & Run <b>npm run ios</b> command in second terminal.</li>
+        </ol>
+      </ul>
+      <li>
+        For more detail please visit this link<a href="https://reactnative.dev/docs/environment-setup"
+          target="_blank">https://reactnative.dev/docs/environment-setup</a>
+      </li>
+      <li>
+        <b>Change App Name</b>-
+        <span><a href="https://stackoverflow.com/questions/34794679/change-app-name-in-react-native"
+            target="_blank">https://stackoverflow.com/questions/34794679/change-app-name-in-react-native</a></span>
+      </li>
+      <li>
+        <b>Change App Icon</b>-
+        <span><a href="https://docs.google.com/document/d/1wbDH1wt_2jhDXDHbGrVIuHGjkvrKUgiFaQTemzmXbuM/edit?usp=sharing"
+            target="_blank">https://docs.google.com/document/d/1wbDH1wt_2jhDXDHbGrVIuHGjkvrKUgiFaQTemzmXbuM/edit?usp=sharing</a></span>
+      </li>
+      <li>
+        <b>Build & Release App on Google Play Store</b>-
+        <span><a href="https://reactnative.dev/docs/signed-apk-android"
+            target="_blank">https://reactnative.dev/docs/signed-apk-android</a></span>
+      </li>
+      <li>
+        <b>Build & Release App on Apple App Store</b>-
+        <span><a href="https://reactnative.dev/docs/publishing-to-app-store"
+            target="_blank">https://reactnative.dev/docs/publishing-to-app-store</a></span>
+      </li>
+    </ul>
+
+    <hr />
+    <h3 id="file">B) Directories & File Uses</h3>
+
+    <ul>
+      <li>
+        <b>assets(Folder)</b> - Put all Static images & fonts in this folder
+      </li>
+      <img src="img/assets.png" width="280px" />
+      <li>
+        <b>components(Folder)</b> - Contain Bottom Tab Bar, Button, Header & loading screen in this folder.
+      </li>
+      <img src="img/components.png" width="280px" />
+      <li><b>constants(Folder)</b> - Put common style file & google map api key file in this folder</li>
+      <li><b>screens(Folder)</b> - Contain all screens in this folder</li>
+      <img src="img/screens.png" width="280px" />
+    </ul>
+
+    <hr />
+
+    <h3 id="map">C) About Google Map Configuration</h3>
+    <p>You need Google Map Api key for Accessing Google Map.</p>
+
+    <ul>
+      <li>Put that api key in 3 places in our code.</li>
+      <ul type="1">
+        <li>
+          <b>attendanceApp/android/app/src/main/AndroidManifest.xml</b> line
+          number 26. (Please refer below image)
+        </li>
+        <img src="img/google-map-api-key-manifest.png" width="500px" />
+        <li>
+          <b>attendanceApp/constants/key.js</b> line
+          number 2 (This is for producton). (Please refer below image)
+        </li>
+        <img src="img/key.png" width="500px" />
+        <li>
+          <b>attendanceApp/ios/attendanceApp/AppDelegate.mm</b> line
+          number 10 (This is for producton). (Please refer below image)
+        </li>
+        <img src="img/google-map-api-key-ios.png" width="500px" />
+      </ul>
+    </ul>
+
+    <hr />
+
+    <h3 id="question">D) Still Have a Question?</h3>
+
+    <p>
+      Please mail us on
+      <span><b><a href="mailto:pixelnestlabs@gmail.com">pixelnestlabs@gmail.com</a></b></span>
+    </p>
+
+    <hr />
+
+    <h3 id="contact">E) Contact US</h3>
+
+    <p>
+      If you have any kind of problem with this code then please mail us on
+      <span><b><a href="mailto:pixelnestlabs@gmail.com">pixelnestlabs@gmail.com</a></b></span>
+    </p>
+
+    <p>
+      If you have any project in flutter or react native then please contact us. We are
+      experiance flutter & react native developer team and build high quality apps for
+      android and ios.
+    </p>
+    <hr />
+
+    <p>
+      Once again, thank you so much for purchasing this item. As I said at the
+      beginning, I'd be glad to help you if you have any questions relating to
+      this item. No guarantees, but I'll do my best to assist. If you have a
+      more general question relating to the application on Codecanyon, you
+      might consider visiting the forums and asking your question in the "Item
+      Discussion" section.
+    </p>
+
+    <a href="https://codecanyon.net/downloads" target="_blank"><img src="img/review.jpg" width="100%" /></a>
+  </div>
+
+  <!-- Social profiles -->
+  <footer>
+    <div class="container" style="color: #ffffff">
+      Feel Free To Contact Us
+      <span><a href="mailto:pixelnestlabs@gmail.com">pixelnestlabs@gmail.com</a></span>
+    </div>
+  </footer>
+
+  <!-- Go to top arrow -->
+  <div class="totop">
+    <div class="gototop">
+      <div class="arrowgototop"></div>
+    </div>
+  </div>
+</body>
+
+</html>
